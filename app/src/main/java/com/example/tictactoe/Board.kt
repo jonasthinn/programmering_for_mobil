@@ -1,4 +1,10 @@
 package com.example.tictactoe
 
-class Board {
-}
+import kotlin.reflect.typeOf
+
+open class Board(val row:Int, val columns: Int) {
+    var board= MutableList(row) { MutableList(columns) {" "}}
+    init {
+
+        }
+    }
