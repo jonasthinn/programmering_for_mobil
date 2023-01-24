@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.textView.text = "Heisann! :)"
 
 
     }
