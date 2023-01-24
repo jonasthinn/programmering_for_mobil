@@ -1,6 +1,6 @@
 package com.example.tictactoe
 
-class TicTacToeGame(override var ttt_board: TTT_Board, override val players: List<TTT_Player>) : Game() {
+class TicTacToeGame(override var ttt_board: TTT_Board, override val players: List<TTTPlayer>) : Game() {
 
     override fun checkForWin() = (checkRows() || checkColumns() || checkDiagonals())
 
@@ -37,7 +37,7 @@ class TicTacToeGame(override var ttt_board: TTT_Board, override val players: Lis
 }
 
 fun main(){
-    var game = TicTacToeGame(TTT_Board(3,3), listOf(TTT_Player( "X"), TTT_Player("O")))
+    var game = TicTacToeGame(TTT_Board(3,3), listOf(TTTPlayer( "X"), TTTPlayer("O")))
     game.ttt_board.makeMove(0,0,"X")
     game.ttt_board.makeMove(1,1,"X")
     game.ttt_board.makeMove(2,2,"X")
