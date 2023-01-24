@@ -1,8 +1,8 @@
 package com.example.tictactoe
 
-class TTT_Player(override val playerName: String, override val playerSymbol: String) : Player {
+class TTT_Player(override val playerSymbol: String) : Player {
+    override var score: Int = 0
     init {
-        val score: Int = 0
     }
 
 
