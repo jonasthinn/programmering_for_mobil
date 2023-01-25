@@ -36,11 +36,3 @@ class TicTacToeGame(override var ttt_board: TTT_Board, override val players: Lis
 
 }
 
-fun main(){
-    var game = TicTacToeGame(TTT_Board(3,3), listOf(TTTPlayer( "X"), TTTPlayer("O")))
-    game.ttt_board.makeMove(0,0,"X")
-    game.ttt_board.makeMove(1,1,"X")
-    game.ttt_board.makeMove(2,2,"X")
-    print(game.ttt_board)
-    print(game.checkForWin())
-}
